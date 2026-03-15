@@ -220,13 +220,13 @@
       background: var(--white);
       border-radius: var(--radius-lg);
       padding: 40px 32px;
-      box-shadow: var(--shadow-sm);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08), 0 4px 20px rgba(0,0,0,0.04);
       position: relative;
       transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     }
     .reason-card:hover {
       transform: translateY(-5px);
-      box-shadow: var(--shadow-lg);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12), 0 4px 16px rgba(0,0,0,0.06);
     }
     .reason-num {
       font-family: 'Zen Maru Gothic', sans-serif;
@@ -252,15 +252,15 @@
     }
     .reason-card h3 {
       font-family: 'Zen Maru Gothic', sans-serif;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 700;
       margin-bottom: 12px;
       color: var(--text);
     }
     .reason-card p {
-      font-size: 14px;
+      font-size: 15px;
       color: var(--text-light);
-      line-height: 1.8;
+      line-height: 1.85;
     }
 
     /* Same-day banner */
@@ -406,17 +406,10 @@
         <li><a href="about.html">院長紹介</a></li>
         <li><a href="services.html">診療内容</a></li>
         <li><a href="flow.html">ご利用の流れ</a></li>
-        <li><a href="referral.html">紹介元の方へ</a></li>
+        <li><a href="referral.html">医療従事者の方へ</a></li>
         <li><a href="recruit.html">採用情報</a></li>
         <li><a href="contact.html" class="nav-cta">お問い合わせ</a></li>
       </ul>
-      <div class="nav-line">
-        <img src="assets/qr-line.svg" alt="LINE QRコード" class="nav-line-qr">
-        <div class="nav-line-text">
-          <span class="nav-line-badge">LINEからも！</span>
-          <small>お気軽にご相談</small>
-        </div>
-      </div>
       <button class="hamburger" id="hamburger" aria-label="メニュー">
         <span></span><span></span><span></span>
       </button>
@@ -426,7 +419,7 @@
   <!-- ===== HERO (full-bleed photo) ===== -->
   <section class="hero-top">
     <div class="hero-top-bg">
-      <img src="assets/hero-visit.png" alt="訪問診療の様子 - 医師が自宅で患者さまを診察">
+      <img src="assets/living-room.png" alt="温かみのある室内 - 住み慣れたご自宅">
     </div>
     <div class="hero-top-overlay"></div>
     <div class="hero-top-inner">
@@ -546,7 +539,7 @@
         </a>
         <a href="referral.html" class="nav-card">
           <div class="nav-card-icon">🤝</div>
-          <h3>紹介元の方へ</h3>
+          <h3>医療従事者の方へ</h3>
           <p>医療機関・ケアマネジャーの皆さまへ、患者様のご紹介方法をご案内します。</p>
           <span class="arrow">詳しく見る →</span>
         </a>
@@ -566,7 +559,7 @@
           お電話・FAX・LINEで、お気軽にご相談ください。
         </p>
         <div class="sameday-actions">
-          <a href="referral.html" class="btn btn-accent">紹介元の方へ →</a>
+          <a href="referral.html" class="btn btn-accent">医療従事者の方へ →</a>
           <a href="contact.html" class="btn btn-outline">お問い合わせ</a>
         </div>
       </div>
@@ -613,7 +606,7 @@
           <li><a href="about.html">院長紹介</a></li>
           <li><a href="services.html">診療内容</a></li>
           <li><a href="flow.html">ご利用の流れ</a></li>
-          <li><a href="referral.html">紹介元の方へ</a></li>
+          <li><a href="referral.html">医療従事者の方へ</a></li>
           <li><a href="flow.html#fee">費用について</a></li>
         </ul>
       </div>
@@ -637,6 +630,13 @@
       📞 06-XXXX-XXXX
       <small>タップで電話がかかります（24時間対応）</small>
     </a>
+  </div>
+
+  <!-- LINE floating sidebar -->
+  <div class="line-float">
+    <img src="assets/qr-line.svg" alt="LINE QRコード" class="line-float-qr">
+    <span class="line-float-badge">LINEからも！</span>
+    <small>お気軽にご相談</small>
   </div>
 
   <script src="main.js"></script>
