@@ -11,8 +11,8 @@
   --text: #374151;
   --text-light: #6B7280;
   --text-muted: #9CA3AF;
-  --bg: #F9FAFB;
-  --white: #FFFFFF;
+  --bg: #F7F5F0;
+  --white: #FEFCF8;
   --border: #E5E7EB;
   --shadow-sm: 0 1px 4px rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.02);
   --shadow-md: 0 4px 12px rgba(0,0,0,0.05), 0 2px 6px rgba(0,0,0,0.03);
@@ -43,7 +43,7 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(249,250,251,0.88);
+  background: rgba(247,245,240,0.92);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-bottom: 1px solid rgba(0,0,0,0.04);
@@ -65,6 +65,10 @@ body {
   gap: 12px;
   text-decoration: none;
   color: var(--primary);
+}
+.nav-logo img {
+  border-radius: 8px;
+  mix-blend-mode: multiply;
 }
 .nav-logo-icon {
   width: 42px;
@@ -430,7 +434,7 @@ body {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: rgba(255,255,255,0.25);
+  background: rgba(254,252,248,0.25);
   backdrop-filter: blur(2px);
 }
 .page-hero-inner {
