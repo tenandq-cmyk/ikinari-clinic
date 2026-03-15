@@ -575,11 +575,13 @@ body {
 .service-icon {
   width: 64px;
   height: 64px;
-  border-radius: 14px;
+  background: var(--primary-light);
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  padding: 14px;
+  flex-shrink: 0;
   margin-bottom: 20px;
 }
 .service-icon img {
