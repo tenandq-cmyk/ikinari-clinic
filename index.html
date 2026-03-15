@@ -240,15 +240,19 @@
       line-height: 1;
     }
     .reason-icon {
-      width: 56px;
-      height: 56px;
-      background: var(--primary-light);
+      width: 72px;
+      height: 72px;
       border-radius: 16px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 28px;
       margin-bottom: 20px;
+      overflow: hidden;
+    }
+    .reason-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
     .reason-card h3 {
       font-family: 'Zen Maru Gothic', sans-serif;
@@ -426,10 +430,10 @@
       <div class="hero-clinic-en">IKINARI HOME CLINIC</div>
       <h1 class="hero-clinic-name"><span>いきなり</span>在宅クリニック</h1>
       <p class="hero-catch">住み慣れた家で、<br>あなたらしい明日を。</p>
-      <p class="hero-sub">私たちは、ご本人とご家族の想いに寄り添い、24時間365日体制で在宅医療を支えるパートナーです。<br>通院が困難な方のもとへ、医師が定期的に訪問いたします。</p>
+      <p class="hero-sub">私たちは、ご本人とご家族の想いに寄り添い、<br>24時間365日体制で在宅医療を支えるパートナーです。<br>通院が困難な方のもとへ、医師が定期的に訪問いたします。</p>
       <div class="hero-top-actions">
         <a href="contact.html" class="btn btn-primary">お問い合わせ</a>
-        <a href="flow.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.4);color:white;">ご利用の流れ →</a>
+        <a href="flow.html" class="btn" style="background:rgba(255,255,255,0.9);color:var(--text);font-weight:700;">ご利用の流れ →</a>
       </div>
       <div class="hero-tel">
         <div class="hero-tel-icon">📞</div>
@@ -491,19 +495,19 @@
       <div class="reasons-grid">
         <div class="reason-card">
           <div class="reason-num">01</div>
-          <div class="reason-icon">🕐</div>
+          <div class="reason-icon"><img src="assets/icon-clock.png" alt="24時間"></div>
           <h3>24時間365日対応</h3>
           <p>夜間や休日の急な体調変化にも、いつでもお電話いただけます。必要に応じて臨時往診も行います。</p>
         </div>
         <div class="reason-card">
           <div class="reason-num">02</div>
-          <div class="reason-icon">🤝</div>
+          <div class="reason-icon"><img src="assets/icon-handshake.png" alt="連携"></div>
           <h3>多職種連携チーム医療</h3>
           <p>訪問看護ステーション・ケアマネジャー・薬局と密に連携し、チームで患者さまを支えます。</p>
         </div>
         <div class="reason-card">
           <div class="reason-num">03</div>
-          <div class="reason-icon">💚</div>
+          <div class="reason-icon"><img src="assets/icon-heart.png" alt="疾患対応"></div>
           <h3>幅広い疾患に対応</h3>
           <p>一般内科から緩和ケア、認知症、人工呼吸器管理まで、さまざまな在宅医療ニーズにお応えします。</p>
         </div>
@@ -520,25 +524,25 @@
       </div>
       <div class="nav-cards">
         <a href="services.html" class="nav-card">
-          <div class="nav-card-icon">🩺</div>
+          <div class="nav-card-icon"><img src="assets/icon-doctor.png" alt=""></div>
           <h3>診療内容</h3>
           <p>訪問診療・往診・緩和ケアなど、幅広い在宅医療サービスをご提供しています。</p>
           <span class="arrow">詳しく見る →</span>
         </a>
         <a href="about.html" class="nav-card">
-          <div class="nav-card-icon">👨‍⚕️</div>
+          <div class="nav-card-icon"><img src="assets/icon-clipboard.png" alt=""></div>
           <h3>院長紹介</h3>
           <p>院長の経歴や診療理念、在宅医療にかける想いをご紹介します。</p>
           <span class="arrow">詳しく見る →</span>
         </a>
         <a href="flow.html" class="nav-card">
-          <div class="nav-card-icon">📋</div>
+          <div class="nav-card-icon"><img src="assets/icon-clipboard.png" alt=""></div>
           <h3>ご利用の流れ・費用</h3>
           <p>初回のお問い合わせから診療開始までの流れと費用についてご案内します。</p>
           <span class="arrow">詳しく見る →</span>
         </a>
         <a href="referral.html" class="nav-card">
-          <div class="nav-card-icon">🤝</div>
+          <div class="nav-card-icon"><img src="assets/icon-handshake.png" alt=""></div>
           <h3>医療従事者の方へ</h3>
           <p>医療機関・ケアマネジャーの皆さまへ、患者様のご紹介方法をご案内します。</p>
           <span class="arrow">詳しく見る →</span>
