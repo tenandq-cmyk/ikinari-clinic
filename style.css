@@ -100,7 +100,7 @@ body {
 .nav-links a {
   text-decoration: none;
   color: var(--text-light);
-  font-size: 13.5px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.02em;
   transition: color 0.2s;
@@ -124,7 +124,7 @@ body {
   color: white !important;
   padding: 10px 22px !important;
   border-radius: 12px !important;
-  font-size: 13px !important;
+  font-size: 15px !important;
   font-weight: 700 !important;
   transition: all 0.3s ease !important;
   box-shadow: 0 2px 8px rgba(107,142,35,0.2);
@@ -404,25 +404,53 @@ body {
 }
 
 /* ===== PAGE HERO (sub pages) ===== */
+/* Frosted-glass page hero */
 .page-hero {
-  padding: 120px 24px 60px;
-  background: linear-gradient(165deg, var(--bg) 0%, var(--primary-light) 100%);
+  position: relative;
+  padding: 140px 24px 72px;
   text-align: center;
+  overflow: hidden;
+  isolation: isolate;
+}
+.page-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+}
+.page-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.15);
+  filter: blur(44px);
+}
+.page-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(2px);
 }
 .page-hero-inner {
   max-width: 800px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 .page-hero h1 {
-  font-size: clamp(26px, 3.5vw, 38px);
+  font-size: clamp(28px, 4vw, 42px);
   font-weight: 700;
   color: var(--text);
   margin-bottom: 14px;
+  text-shadow: 0 1px 8px rgba(255,255,255,0.6);
 }
 .page-hero p {
   font-size: 15px;
-  color: var(--text-light);
+  color: var(--text);
   line-height: 1.85;
+  text-shadow: 0 1px 4px rgba(255,255,255,0.5);
 }
 .breadcrumb {
   font-size: 13px;
@@ -1367,5 +1395,5 @@ body {
   .phone-banner { display: block; }
   .footer { padding-bottom: 80px; }
   .section { padding: 64px 20px; }
-  .page-hero { padding: 100px 20px 40px; }
+  .page-hero { padding: 110px 20px 48px; }
 }
