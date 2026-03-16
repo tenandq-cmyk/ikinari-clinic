@@ -1410,6 +1410,10 @@ body {
   .referral-contact-cards { grid-template-columns: 1fr 1fr; }
   .procedures-grid { grid-template-columns: 1fr; }
 
+  .philosophy { padding: 28px 20px; }
+  .philosophy h3 { font-size: 20px; }
+  .about-photo { max-width: 260px; margin: 0 auto; }
+
   .phone-banner { display: block; }
   .footer { padding-bottom: 80px; }
   .section { padding: 64px 20px; }
